@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Program Ubah Warna</title>
+<script language="javaScript">
+function ubahWarna(){
+let acak = Math.round(Math.random() * 10);
+let warnas = ["beige", "cyan", "yellow", "pink", "green", "blue", "red", "azure", "gold", "gray", "purple"];
+console.log("bilangan acak " + acak);
+console.log("Dapat warna " + warnas[acak]);
+
+document.getElementById("idl").style="background-color:"+warnas[acak];
+}
+</script>  
+</head>
+ <body id="idl">
+<form>
+     <input type="button" value="Ubah Warna" onclick="ubahWarna()"/>
+</form>
+</body>
+</html>
